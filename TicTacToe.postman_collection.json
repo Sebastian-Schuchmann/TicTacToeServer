@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "4cc6bd11-99fb-4941-813a-5a4e9ea935c9",
+		"name": "TicTacToe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Is Running",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}",
+					"host": [
+						"{{base_url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/CreateGame",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"CreateGame"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetField",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/GetField",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"GetField"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MakeTurn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/MakeTurn?playerId=0&selectedField=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"MakeTurn"
+					],
+					"query": [
+						{
+							"key": "playerId",
+							"value": "0"
+						},
+						{
+							"key": "selectedField",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080"
+		}
+	]
+}
