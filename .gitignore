@@ -1,0 +1,8 @@
+
+TicTacToeServer/bin/
+
+TicTacToeServer/obj/
+
+.idea/
+
+.DS_Store
