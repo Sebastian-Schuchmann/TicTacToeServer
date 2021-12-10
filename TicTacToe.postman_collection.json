@@ -54,6 +54,23 @@
 			"response": []
 		},
 		{
+			"name": "GetFieldPretty",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/GetFieldPretty",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"GetFieldPretty"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "MakeTurn",
 			"request": {
 				"method": "POST",
